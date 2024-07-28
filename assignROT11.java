@@ -1,4 +1,4 @@
-public class assignROT {
+public class assignROT11 {
     public static void rotate(int[] nums, int k) {
         int n=nums.length;
         k=k%n;
