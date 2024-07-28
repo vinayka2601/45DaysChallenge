@@ -1,4 +1,4 @@
-public class MissingNum {
+public class MissingNum11 {
     public static int missingNumber(int []a, int N) {
         int sum2=0;
          int sum1=(N*(N+1))/2;
