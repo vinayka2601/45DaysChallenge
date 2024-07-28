@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class moveZeroA7 {
     public static void moving(int[]nums){
         int size=nums.length;
@@ -20,8 +22,14 @@ public class moveZeroA7 {
     }
     public static void main(String[] args) {
         int nums[]={0,22,3,0,5,0};
-        ;
-        System.out.println();
+       moving(nums);
+       
+    //    for (int i = 0; i < nums.length; i++) {
+    //     System.out.print(nums[i] + " ");}
+
+        System.out.println(Arrays.toString(nums));
+    
+        
 
     }
 }
