@@ -1,4 +1,4 @@
-public class SubArr {
+public class SubArr13 {
     public static int longestSubarrayWithSumK(int []a, long k) {
          
         long len=0;

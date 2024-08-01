@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class singleNum {
+public class singleNum13 {
      public static int singleNumber(int[] nums) {
     //     HashSet<Integer> set = new HashSet<>();
     // for (int num : nums) {

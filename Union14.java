@@ -1,4 +1,4 @@
-public class Union {
+public class Union14 {
 
     public static void unionArr(int arr[],int nums[],int m,int n){
        
