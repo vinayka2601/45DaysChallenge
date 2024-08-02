@@ -1,43 +1,44 @@
-public class Union14 {
+import java.util.ArrayList;
+import java.util.List;
 
-    public static void unionArr(int arr[],int nums[],int m,int n){
-       
-        int p1=m-1;
-        int p2=n-1;
-        int p=m+n-1;
-        
-        while(p1>=0 && p2>=0){
-            if(arr[p1]<nums[p2]){
-                arr[p--]=nums[p2--];
-            }else{
-                arr[p--]=arr[p1--];
-            }
-        }
-        while(p2>=0){
-            arr[p--]=nums[p2--];
-          }
-          
+public class Union14 {
+    public static List< Integer > sortedArray(int []arr, int []nums,int m,int n){
+        int i=0;
+        int j=0;
+        ArrayList<Integer> list =new ArrayList<>();
+  while(i<m &&j<n){
+  if(arr[i]<=nums[j]){
+     list.add(arr[i]);
+     i++;
+  }
+  else{
+    list.add(nums[j]);
+    j++;
+  }
+
+  }
+  while(j<n){
+    list.add(nums[j]);
+    j++;
+  }
+  while(i<m){
+    list.add(arr[i]);
+    i++;
+  }
+ 
+return list;
     }
-    public static void Remduplic(int arr[],int m,int n) {
-        int rd=0;
-        for(int i=1;i<=m+n;i++){
-        if(arr[rd]!=arr[i]){
-            rd++;
-            arr[rd]=arr[i];
-        }
-        }
-        
-    }
+    
+    
     public static void main(String[] args) {
-        int arr[]={1,1,2,3,0,0,0,0,0,0};
+        int arr[]={1,1,2,3,4,5};
         int nums[]={1,2,3,4,5,6};
         int m=arr.length;
         int n=nums.length;
-        Remduplic(arr, m, n);
-        unionArr(arr, nums,m,n);
-        for (int num : arr) {
+        
+        List<Integer> mergedList = sortedArray(arr, nums, m, n);
+        for (int num : mergedList) {
             System.out.print(num + " ");
         }
-       
     }
 }
