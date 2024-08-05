@@ -1,4 +1,4 @@
-public class kadans {
+public class kadans16 {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
         int max = Integer.MIN_VALUE;
