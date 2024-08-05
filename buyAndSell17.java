@@ -1,4 +1,4 @@
-public class buyAndSell20 {
+public class buyAndSell17 {
     public int maxProfit(int[] prices) {
         int mini=prices[0];
         int n=prices.length;
