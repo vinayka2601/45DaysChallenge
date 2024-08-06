@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Superior {
+public class Superior20 {
      public static List< Integer > superiorElements(int []a) {
         ArrayList <Integer> ans= new ArrayList<>();
          int n=a.length;
