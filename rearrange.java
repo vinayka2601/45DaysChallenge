@@ -31,6 +31,6 @@ for(int i : nums){
        
     }
 }
-return arr;
+   return nums;
         }
 }
