@@ -14,7 +14,7 @@ public class Divisior {
         
 }
 public static void main(String[] args) {
-    int n=50;
+    int n=12;
     System.out.println(printDivisors(n));;
 }
 }
