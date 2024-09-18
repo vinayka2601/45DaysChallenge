@@ -1,10 +1,8 @@
 package Frequency;
 
-public class frequency {
+public class freqq {
     public static void frq(int arr[]){
         boolean visited[]=new boolean[arr.length];
-        int[] frqfrq=new int[arr.length];
-       
      for(int i=0;i<arr.length;i++){
         
         if(visited[i]==true){
@@ -20,19 +18,8 @@ public class frequency {
             
         }
          System.out.println(arr[i]+" ki freq hai "+count);
-       frqfrq[i]=count;
-      
-     }
-     
-     for(int i=0;i<arr.length;i++){
-        if(!visited[i]){
-            System.out.print(frqfrq[i]);
         }
-       
      }
-    
-     
-    }
     public static void main(String[] args) {
         int arr[]={10,20,10,25,5,20,20,25};
         frq(arr);
