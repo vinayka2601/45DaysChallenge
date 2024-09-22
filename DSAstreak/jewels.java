@@ -1,3 +1,5 @@
+package DSAstreak;
+import java.util.*;
 public class jewels {
     public int numJewelsInStones(String jewels, String stones) {
         HashSet<Character> jewelSet = new HashSet<>();
