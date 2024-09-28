@@ -13,6 +13,12 @@ public class kuvhbhi {
                 hm.put(arr[i],1);
             }
         }
+        //can use this instade
+
+        // for (int i = 0; i < arr.length; i++) {
+        //     hm.put(arr[i], hm.getOrDefault(arr[i], 0) + 1);
+        // }
+        
         hm.forEach((key,value)->{
           System.out.println("number | frequency");
           System.out.println("  "+key+"         "+value);
