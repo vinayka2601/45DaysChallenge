@@ -1,10 +1,13 @@
 public class RughPage {
-    public static void main(String[] args) {
-        int n=5;
-        for(int i=1;i<=n;i++){
-            if(n%i==0){
-                System.out.println(i);
+    public static int nonREp(int arr[]){
+        int uni=0;
+            for(int i=0;i<arr.length;i++){
+            uni^=arr[i];    
             }
+           return uni;
         }
+    public static void main(String[] args) {
+        int arr[]={5,4,1,4,3,5,1,2};
+        //int res[]= nonREp(arr);  
     }
 }
