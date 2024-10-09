@@ -2,7 +2,6 @@ package DSAstreak;
 
 public class countSetBit {
     public static int countBit(int n){
-       
             int count=0;
         while(n>0){
             n =n & (n-1);
@@ -17,7 +16,6 @@ public class countSetBit {
       }
     return ct;
        }
-    
     public static void main(String[] args) {
         int n=3;
         System.out.println(countSetBits(n));
