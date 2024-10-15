@@ -13,7 +13,7 @@ public class deciTOoctal {
         return ans;
     }
     public static void main(String[] args) {
-        int n=63;
+        int n=634;
         int change=8;
         System.out.println(oct(n, change));
        
